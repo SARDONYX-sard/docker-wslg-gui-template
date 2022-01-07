@@ -58,15 +58,17 @@
       "*.spec": "python"
     },
     "files.exclude": {
-      ".mypy_cache": true,
-      ".venv": true,
-      "**/__pycache__": true,
-      "**/.idea": true
+      "**/.idea": true,
+      "**/.mypy_cache": true,
+      "**/.pytest_cache": true,
+      "**/.venv": true,
+      "**/__pycache__": true
     },
     "files.watcherExclude": {
       "**/.git/objects/**": true,
       "**/.idea": true,
       "**/.mypy_cache": true,
+      "**/.pytest_cache": true,
       "**/.venv": true,
       "**/__pycache__": true
     },
