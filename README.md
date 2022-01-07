@@ -56,17 +56,18 @@ git clone
 
 ## Make usage
 
-| Command             | Description                                        |
-| :------------------ | :------------------------------------------------- |
-| `make compose-conf` | Set `.env.wsl` & Show `docker-compose.yml` config. |
-| `make compose-up`   | Create container by `docker-compose.yml`.          |
-| `make start`        | Run python file(default: `src/main.py`)            |
-| `make install-dev`  | Install dependencies (For dev)                     |
-| `make install`      | Install dependencies (For prod)                    |
-| `make lint`         | Lint with pysen                                    |
-| `make lint-fix`     | Lint fix with pysen                                |
-| `make test`         | Test with pytest                                   |
-| `make clean`        | Remove `__pycache__` files, `.venv`                |
+| Command             | Description                                       |
+| :------------------ | :------------------------------------------------ |
+| `make compose-conf` | Set `.env.wsl` & Show `docker-compose.yml` config |
+| `make compose-up`   | Create container by `docker-compose.yml`          |
+| `make start`        | Run python file(default: `src/main.py`)           |
+| `make install-dev`  | Install dependencies (For dev)                    |
+| `make install`      | Install dependencies (For prod)                   |
+| `make lint`         | Lint with pysen                                   |
+| `make lint-fix`     | Lint fix with pysen                               |
+| `make test`         | Test with pytest                                  |
+| `make ci`           | Remove `.venv` dir & Install dependencies         |
+| `make clean`        | Remove cache files                                |
 
 If you are using windows, you can install the `make` command
 [here](http://gnuwin32.sourceforge.net/packages/make.htm).

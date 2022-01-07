@@ -65,6 +65,7 @@ git clone
 | `make test`         | pytestでテスト実行                                |
 | `make lint`         | pysenを使ったLint                               |
 | `make lint-fix`     | pysenを使ったコードの自動整形と修正                        |
+| `make ci`           | 依存関係の再インストール                                |
 | `make clean`        | `__pycache__` ファイル、`.venv`ディレクトリを削除         |
 
 `Windows`をお使いの場合、[こちら](http://gnuwin32.sourceforge.net/packages/make.htm)から`make`コマンドをインストールできます。(`setup`ボタンをクリックします)
