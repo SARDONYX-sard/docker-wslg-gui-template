@@ -35,7 +35,10 @@ lint-fix:
 test:
 				poetry run pytest
 
+ci:
+				rm -rf .venv && make install dev
+
 clean:
-				rm -rf  **/__pycache__ **/**/__pycache__ .venv
+				rm -rf  **/__pycache__ .pytest_cache .mypy_cache
 
 .PHONY: start lint lint-fix test install-dev install clean test
