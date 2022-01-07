@@ -19,6 +19,8 @@ The sample is in python, but other images are also possible.
   - [Table of Contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
   - [Quick Start](#quick-start)
+    - [If you are using an editor other than VS code](#if-you-are-using-an-editor-other-than-vs-code)
+    - [VS code User](#vs-code-user)
   - [Make usage](#make-usage)
   - [Directory structure](#directory-structure)
   - [License](#license)
@@ -31,6 +33,8 @@ Required
 - [WSLg](https://github.com/microsoft/wslg)
 
   (Required to display Docker GUI on windows)
+
+- git
 
 - [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
   (Build any environment with virtual containers)
@@ -48,11 +52,47 @@ Optional
 Otherwise, the wslg directory will not be mounted correctly and the GUI will not
 be displayed.
 
-Run the following command.
+---
+
+### If you are using an editor other than VS code
+
+Step 1: Run the following command.
 
 ```bash
-git clone
+git clone https://github.com/SARDONYX-sard/docker-wslg-gui-template.git
+cd docker-wslg-gui-template
 ```
+
+Step2: Enter the following command and then enter the container created.
+
+```bash
+make compose
+```
+
+---
+
+### VS code User
+
+Step 1: Run the following command.
+
+```bash
+git clone https://github.com/SARDONYX-sard/docker-wslg-gui-template.git
+cd docker-wslg-gui-template
+code .
+```
+
+Step 2: Click on the WSL: `<Linux name>` icon in the lower left corner.
+
+<p align="center">
+    <img src="./docs/images/WSL-button.png" alt="wsl-ubuntu"  height="300" width="800"/>
+</p>
+
+Step 3: Select the item `Reopen in Container` from the palette that appears in
+the center.
+
+<p align="center">
+    <img src="./docs/images/remote-container.png" alt="wsl-ubuntu"  height="300" width="800"/>
+</p>
 
 ## Make usage
 
@@ -82,6 +122,7 @@ docker-wslg-gui-template
 |  └── devcontainer.json
 ├── .editorconfig
 ├── .github
+|  ├── dependabot.yml
 |  └── workflows
 |     └── ci.yml
 ├── docker

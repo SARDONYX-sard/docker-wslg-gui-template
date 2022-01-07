@@ -17,22 +17,13 @@ Docker + WSLg + devcontainer.json + Pythonのテンプレートです。
 - [Docker + WSLg GUI-Template](#docker--wslg-gui-template)
   - [概要](#概要)
   - [目次](#目次)
-  - [クイックスタート](#クイックスタート)
   - [前提条件](#前提条件)
+  - [クイックスタート](#クイックスタート)
+    - [VS code以外のエディタをお使いの場合](#vs-code以外のエディタをお使いの場合)
+    - [VS codeをお使いの場合](#vs-codeをお使いの場合)
   - [Make の使い方](#make-の使い方)
   - [ディレクトリ構造](#ディレクトリ構造)
   - [ライセンス](#ライセンス)
-
-## クイックスタート
-
-<font color=red>警告:</font> **必ずWSLのディレクトリ内で実行**してください。
-でないと正しくwslgディレクトリが正しくマウントされず、GUIが表示できません。
-
-Run the following command.
-
-```bash
-git clone
-```
 
 ## 前提条件
 
@@ -43,6 +34,8 @@ git clone
 
   (WindowsでDockerのGUIを表示するために必要)
 
+- git
+
 - [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
   (仮想コンテナーによる任意の環境構築のため）
 
@@ -52,6 +45,52 @@ git clone
   (開発しやすくするために)
   - 拡張機能
     [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+
+## クイックスタート
+
+<font color=red>警告:</font> **必ずWSLのディレクトリ内で実行**してください。
+でないと正しくwslgディレクトリが正しくマウントされず、GUIが表示できません。
+
+---
+
+### VS code以外のエディタをお使いの場合
+
+Step 1: 以下のコマンドを実行します。
+
+```bash
+git clone https://github.com/SARDONYX-sard/docker-wslg-gui-template.git
+cd docker-wslg-gui-template
+```
+
+Step2: 以下のコマンドを実行後、作成されたコンテナに入ってください。
+
+```bash
+make compose
+```
+
+---
+
+### VS codeをお使いの場合
+
+Step 1: 以下のコマンドを実行します。
+
+```bash
+git clone https://github.com/SARDONYX-sard/docker-wslg-gui-template.git
+cd docker-wslg-gui-template
+code .
+```
+
+Step 2: 左下のWSL: `<Linux name>`というアイコンをクリックします。
+
+<p align="center">
+    <img src="../../images/WSL-button.png" alt="wsl-ubuntu"  height="300" width="800"/>
+</p>
+
+Step 3: 中央に現れたパレットから`Reopen in Container`というを項目を選択します。
+
+<p align="center">
+    <img src="../../images/remote-container.png" alt="wsl-ubuntu"  height="300" width="800"/>
+</p>
 
 ## Make の使い方
 
@@ -78,6 +117,7 @@ docker-wslg-gui-template
 |  └── devcontainer.json
 ├── .editorconfig
 ├── .github
+|  ├── dependabot.yml
 |  └── workflows
 |     └── ci.yml
 ├── docker
