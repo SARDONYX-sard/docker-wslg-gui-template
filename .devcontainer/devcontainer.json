@@ -9,6 +9,7 @@
     "dongli.python-preview",
     "donjayamanne.python-environment-manager",
     "donjayamanne.python-extension-pack",
+    "eamodio.gitlens",
     "esbenp.prettier-vscode",
     "kevinrose.vsc-python-indent",
     "mgesbert.python-path",
