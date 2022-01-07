@@ -75,28 +75,35 @@ git clone
 docker-wslg-gui-template
 ├── .devcontainer
 |  └── devcontainer.json
+├── .editorconfig
+├── .github
+|  └── workflows
+|     └── ci.yml
 ├── docker
 |  ├── .env.wslg
-|  ├── docker-compose.yml
-|  └── Dockerfile
+|  ├── Dockerfile
+|  └── docker-compose.yml
 ├── docs
 |  ├── i18n
 |  |  └── jp
-|  |     └── README.md
 |  └── images
 |     └── gui-sample.png
 ├── scripts
 |  └── set-wslg.sh
 ├── src
-|  └── main.py
-├── .editorconfig
+|  ├── main.py
+|  └── utils
+|     ├── __init__.py
+|     └── operator.py
+├── tests
+|  ├── __init__.py
+|  └── test_operator.py
 ├── .gitignore
+├── LICENSE
 ├── Makefile
 ├── poetry.lock
 ├── pyproject.toml
 └── README.md
-
-ディレクトリ: 8 ファイル: 14
 ```
 
 ## ライセンス
