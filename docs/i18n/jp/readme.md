@@ -1,6 +1,6 @@
 # Docker + WSLg GUI-Template
 
-[English](../../../README.md) | 日本語
+[English](https://github.com/SARDONYX-sard/docker-wslg-gui-template#vs-code-user) | 日本語
 
 ## 概要
 
