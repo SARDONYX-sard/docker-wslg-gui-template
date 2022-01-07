@@ -63,9 +63,11 @@
       "**/.idea": true
     },
     "files.watcherExclude": {
-      "**/__pycache__": true,
       "**/.git/objects/**": true,
-      "**/.idea": true
+      "**/.idea": true,
+      "**/.mypy_cache": true,
+      "**/.venv": true,
+      "**/__pycache__": true
     },
     "python.defaultInterpreterPath": "/usr/local/bin/python",
     "python.envFile": "${workspaceFolder}/.env",
