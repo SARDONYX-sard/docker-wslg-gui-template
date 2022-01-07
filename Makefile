@@ -36,7 +36,7 @@ test:
 				poetry run pytest
 
 ci:
-				rm -rf .venv && make install dev
+				rm -rf .venv && make install-dev
 
 clean:
 				rm -rf  **/__pycache__ .pytest_cache .mypy_cache
