@@ -1,0 +1,81 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.158.0/containers/docker-existing-docker-compose
+// If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
+{
+  "dockerComposeFile": ["../docker/docker-compose.yml"],
+  "extensions": [
+    "almenon.arepl",
+    "bungcip.better-toml",
+    "dongli.python-preview",
+    "donjayamanne.python-environment-manager",
+    "donjayamanne.python-extension-pack",
+    "esbenp.prettier-vscode",
+    "kevinrose.vsc-python-indent",
+    "mgesbert.python-path",
+    "ms-ceintl.vscode-language-pack-ja",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "mutantdino.resourcemonitor",
+    "njpwerner.autodocstring",
+    "njqdev.vscode-python-typehint",
+    "oderwat.indent-rainbow",
+    "spmeesseman.vscode-taskexplorer",
+    "streetsidesoftware.code-spell-checker",
+    "tamasfe.even-better-toml",
+    "visualstudioexptteam.vscodeintellicode"
+  ],
+  "name": "wslg-gui-template",
+  "onCreateCommand": "make install-dev",
+  "remoteUser": "user", // To prevent poetry's path errors.
+  "service": "python-gui",
+  "settings": {
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.python",
+      "editor.formatOnType": false,
+      "editor.tabSize": 4
+    },
+    "cSpell.words": [
+      "autopep",
+      "devcontainer",
+      "mypy",
+      "noprofile",
+      "pycache",
+      "pycodestyle",
+      "pydocstyle",
+      "pylint",
+      "pysen",
+      "wslg",
+      "yapf"
+    ],
+    "editor.rulers": [80],
+    "editor.tabCompletion": "on",
+    "files.associations": {
+      ".env": "dotenv",
+      ".gitignore": "ignore",
+      "*.json": "jsonc",
+      "*.md": "markdown",
+      "*.spec": "python"
+    },
+    "files.exclude": {
+      ".mypy_cache": true,
+      ".venv": true,
+      "**/__pycache__": true,
+      "**/.idea": true
+    },
+    "files.watcherExclude": {
+      "**/__pycache__": true,
+      "**/.git/objects/**": true,
+      "**/.idea": true
+    },
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.pythonPath": "${workspaceRoot}/.venv/Script/python"
+  },
+  "workspaceFolder": "/home/user/code"
+}
