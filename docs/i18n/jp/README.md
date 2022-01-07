@@ -8,7 +8,7 @@
     <img src="../../images/gui-sample.png" alt="wsl-ubuntu"  height="300" width="800"/>
 </p>
 
-Docker + WSLg + .devcontainer.json + Pythonのテンプレートです。
+Docker + WSLg + devcontainer.json + Pythonのテンプレートです。
 
 サンプルはpythonですが、他のイメージでも可能です。
 

@@ -8,7 +8,7 @@ English | [日本語](./docs/i18n/jp/readme.md)
     <img src="./docs/images/gui-sample.png" alt="wsl-ubuntu"  height="300" width="800"/>
 </p>
 
-This is Docker + WSLg + .devcontainer.json + Python template.
+This is Docker + WSLg + devcontainer.json + Python template.
 
 The sample is in python, but other images are also possible.
 
