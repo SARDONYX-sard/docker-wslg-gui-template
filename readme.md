@@ -1,6 +1,6 @@
 # Docker + WSLg GUI-Template
 
-English | [日本語](./docs/i18n/jp/README.md)
+English | [日本語](./docs/i18n/jp/readme.md)
 
 ## About
 
