@@ -97,7 +97,7 @@ Step 3: 中央に現れたパレットから`Reopen in Container`というを項
 | コマンド                | 説明                                          |
 | :------------------ | :------------------------------------------ |
 | `make compose-conf` | `.env.wsl`を設定し、 `docker-compose.yml` の設定を表示 |
-| `make compose-up`   | `docker-compose.yml` によってコンテナーを作成           |
+| `make compose`      | `docker-compose.yml` によってコンテナーを作成           |
 | `make start`        | pythonファイル(デフォルト: `src/main.py`) を実行        |
 | `make install-dev`  | 依存関係のインストール(開発用)                            |
 | `make install`      | 依存関係のインストール (本番用)                           |

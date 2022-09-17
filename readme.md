@@ -99,7 +99,7 @@ the center.
 | Command             | Description                                       |
 | :------------------ | :------------------------------------------------ |
 | `make compose-conf` | Set `.env.wsl` & Show `docker-compose.yml` config |
-| `make compose-up`   | Create container by `docker-compose.yml`          |
+| `make compose`      | Create container by `docker-compose.yml`          |
 | `make start`        | Run python file(default: `src/main.py`)           |
 | `make install-dev`  | Install dependencies (For dev)                    |
 | `make install`      | Install dependencies (For prod)                   |
