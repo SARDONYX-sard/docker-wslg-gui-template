@@ -8,8 +8,15 @@ compose-conf:
 				bash './scripts/set-wslg.sh'
 				cd ./docker	&& docker-compose config
 
-compose-up:
-				bash docker-compose -f docker-compose.yml up -d --build
+compose:
+				cd ./docker	&& docker-compose -f docker-compose.yml up -d --build
+				docker exec -it docker-python-gui-1 bash
+
+compose-rebuild:
+				docker compose -f "docker/docker-compose.yml" down
+				make compose
+
+.PHONY: compose-conf compose compose-rebuild
 
 # --------------------------------------------------------------------------------------------------
 # In container command
