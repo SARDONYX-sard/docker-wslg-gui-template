@@ -2,7 +2,9 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.158.0/containers/docker-existing-docker-compose
 // If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
 {
-  "dockerComposeFile": ["../docker/docker-compose.yml"],
+  "dockerComposeFile": [
+    "../docker/docker-compose.yml"
+  ],
   "extensions": [
     "almenon.arepl",
     "bungcip.better-toml",
@@ -48,7 +50,9 @@
       "wslg",
       "yapf"
     ],
-    "editor.rulers": [80],
+    "editor.rulers": [
+      80
+    ],
     "editor.tabCompletion": "on",
     "files.associations": {
       ".env": "dotenv",
@@ -82,5 +86,5 @@
     "python.linting.pycodestyleEnabled": true,
     "python.pythonPath": "${workspaceRoot}/.venv/Script/python"
   },
-  "workspaceFolder": "/home/user/code"
+  "workspaceFolder": "/root/code"
 }

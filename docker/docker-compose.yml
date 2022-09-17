@@ -10,6 +10,6 @@ services:
     restart: always
     tty: true
     volumes:
-      - ../:/home/user/code
+      - ../:/root/code
       - /mnt/wslg:/mnt/wslg
       - /tmp/.X11-unix:/tmp/.X11-unix
