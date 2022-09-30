@@ -7,7 +7,7 @@ authors = ["example <example.example@example.com>"]
 [tool.poetry.dependencies]
 python = ">=3.7 <3.9"
 PySimpleGUI = "^4.55.1"
-matplotlib = "^3.5.1"
+matplotlib = "^3.5.3"
 
 [tool.poetry.dev-dependencies]
 pysen = { version = "^0.10.1", extras = ["lint"] }
