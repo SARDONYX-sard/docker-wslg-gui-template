@@ -355,7 +355,7 @@ diagrams = ["jinja2", "railroad-diagrams"]
 
 [[package]]
 name = "pysen"
-version = "0.10.1"
+version = "0.10.2"
 description = "Python linting made easy. Also a casual yet honorific way to address individuals who have entered an organization prior to you."
 category = "dev"
 optional = false
@@ -363,6 +363,7 @@ python-versions = "*"
 
 [package.dependencies]
 black = {version = ">=19.10b0,<=20.8", optional = true, markers = "extra == \"lint\""}
+click = {version = "<8.1.0", optional = true, markers = "extra == \"lint\""}
 colorlog = ">=4.0.0,<5.0.0"
 dacite = ">=1.1.0,<2.0.0"
 flake8 = {version = ">=3.7,<5", optional = true, markers = "extra == \"lint\""}
@@ -374,7 +375,8 @@ tomlkit = ">=0.5.11,<1.0.0"
 unidiff = ">=0.6.0,<1.0.0"
 
 [package.extras]
-lint = ["black (>=19.10b0,<=20.8)", "flake8 (>=3.7,<5)", "flake8-bugbear", "isort (>=4.3,<5.2.0)", "mypy (>=0.770,<0.800)"]
+lint = ["black (>=19.10b0,<=20.8)", "click (<8.1.0)", "flake8 (>=3.7,<5)", "flake8-bugbear", "isort (>=4.3,<5.2.0)", "mypy (>=0.770,<0.800)"]
+
 
 [[package]]
 name = "pysimplegui"
@@ -840,8 +842,8 @@ pyparsing = [
     {file = "pyparsing-3.0.6.tar.gz", hash = "sha256:d9bdec0013ef1eb5a84ab39a3b3868911598afa494f5faa038647101504e2b81"},
 ]
 pysen = [
-    {file = "pysen-0.10.1-py3-none-any.whl", hash = "sha256:d7d6e53eefea4234b13094e65d7bd50bd6fc16dbbab75b17147caca1d55fa17f"},
-    {file = "pysen-0.10.1.tar.gz", hash = "sha256:68e6661f967ee8e91a75425933abd8c859c11b18426da8c7603c843513d616c7"},
+    {file = "pysen-0.10.2-py3-none-any.whl", hash = "sha256:f669c86d12e50d75a0037898fe0e20354f8545aa9682d0934374112eb37b131f"},
+    {file = "pysen-0.10.2.tar.gz", hash = "sha256:5400124c3b6bf1a11d4a359cc44c9909c364615dc128eb35def1f735a4fbe6d2"},
 ]
 pysimplegui = [
     {file = "PySimpleGUI-4.55.1-py3-none-any.whl", hash = "sha256:dac8a7d43c246c68bb3c6cdabb0b0abb369df8a7bf3f246d6144e64b6e9330b4"},
