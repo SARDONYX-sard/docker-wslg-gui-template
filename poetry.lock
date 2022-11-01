@@ -379,8 +379,8 @@ lint = ["black (>=19.10b0,<=20.8)", "click (<8.1.0)", "flake8 (>=3.7,<5)", "flak
 
 [[package]]
 name = "pysimplegui"
-version = "4.55.1"
-description = "Python GUIs for Humans. Launched in 2018. It's 2021 & PySimpleGUI is an ACTIVE & supported project. Super-simple to create custom GUI's. 325+ Demo programs & Cookbook for rapid start. Extensive documentation. Main docs at www.PySimpleGUI.org. Fun & your success are the focus. Examples using Machine Learning (GUI, OpenCV Integration), Rainmeter Style Desktop Widgets, Matplotlib + Pyplot, PIL support, add GUI to command line scripts, PDF & Image Viewers. Great for beginners & advanced GUI programmers."
+version = "4.60.4"
+description = "Python GUIs for Humans. Launched in 2018. It's 2022 & PySimpleGUI is an ACTIVE & supported project. Super-simple to create custom GUI's. 325+ Demo programs & Cookbook for rapid start. Extensive documentation. Main docs at www.PySimpleGUI.org. Fun & your success are the focus. Examples using Machine Learning (GUI, OpenCV Integration), Rainmeter Style Desktop Widgets, Matplotlib + Pyplot, PIL support, add GUI to command line scripts, PDF & Image Viewers. Great for beginners & advanced GUI programmers."
 category = "main"
 optional = false
 python-versions = "*"
@@ -569,7 +569,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7 <3.9"
-content-hash = "c7012860ab231c3fd8528bfbb05c8f0a65ade609365e32c8b9d4c0030e4c6fd2"
+content-hash = "96a9cd0d9dbdbf2a1e75d9cb505b0e725c818a012b74ffeb1e557acf713163f4"
 
 [metadata.files]
 appdirs = [
@@ -845,8 +845,8 @@ pysen = [
     {file = "pysen-0.10.2.tar.gz", hash = "sha256:5400124c3b6bf1a11d4a359cc44c9909c364615dc128eb35def1f735a4fbe6d2"},
 ]
 pysimplegui = [
-    {file = "PySimpleGUI-4.55.1-py3-none-any.whl", hash = "sha256:dac8a7d43c246c68bb3c6cdabb0b0abb369df8a7bf3f246d6144e64b6e9330b4"},
-    {file = "PySimpleGUI-4.55.1.tar.gz", hash = "sha256:9d40c0a0c2b4c3d2ee935854e48d724f508ae68123f4bac8072612dd9e707dec"},
+    {file = "PySimpleGUI-4.60.4-py3-none-any.whl", hash = "sha256:e133fbd21779f0f125cebbc2a4e1f5a931a383738661013ff33ad525d5611eda"},
+    {file = "PySimpleGUI-4.60.4.tar.gz", hash = "sha256:f88c82c301a51aea35be605dc060bcceb0dcb6682e16280544884701ab4b23ba"},
 ]
 pytest = [
     {file = "pytest-6.2.5-py3-none-any.whl", hash = "sha256:7310f8d27bc79ced999e760ca304d69f6ba6c6649c0b60fb0e04a4a77cacc134"},
