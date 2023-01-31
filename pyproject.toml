@@ -10,7 +10,7 @@ PySimpleGUI = "^4.55.1"
 matplotlib = "^3.5.1"
 
 [tool.poetry.dev-dependencies]
-pysen = { version = "^0.10.2", extras = ["lint"] }
+pysen = { version = "^0.10.3", extras = ["lint"] }
 pytest = "^6.2.5"
 pytest-mock = "^3.6.1"
 pytest-sugar = "^0.9.5"
